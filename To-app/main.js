@@ -34,14 +34,39 @@ function TaskTodo(e) {
 
         boxOshowOffer.style.display = "none"
 
+        attachEvent(li)
+
         ClearBtn.addEventListener('click', function () {
             handleClear(li)
         })
-
+        AddLocalStorage(textTask)
     }
+
 }
 
 function handleClear(li) {
     li.remove()
+}
+
+
+function AddLocalStorage(textTask) {
+    const oldMessage = JSON.parse(localStorage.getItem("tasks") || [])
+    oldMessage.push(textTask)
+    localStorage.setItem("tasks", JSON.stringify(oldMessage))
+}
+
+function attachEvent(li) {
+
+    const active = li.querySelector('#Active')
+
+    active.addEventListener('click', function () {
+        handleActive(li)
+    })
+
+}
+
+function handleActive(li) {
+    li.style.backgroundColor = "#a5fb8fd0"
+    li.style.borderRadius = "10px"
 }
 
