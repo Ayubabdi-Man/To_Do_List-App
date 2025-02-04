@@ -10,16 +10,15 @@ function TaskTodo(e) {
     e.preventDefault()
 
     const textTask = textFieldTodo.value.trim()
-
-    console.log(textTask);
-
     const tasks = {
         id: Date.now(),
         text: textTask,
     }
 
-    if (tasks == " ") {
-        alert("Please Enter Task...")
-    }
+    if (textTask === "") {
+        alert("Please Enter Your Task")
+    } else {
 
+    }
 }
+
