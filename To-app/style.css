@@ -5,7 +5,7 @@ body {
 
 .container {
     width: 500px;
-    height: 500px;
+    height: 550px;
     background-color: black;
     margin: 10rem auto;
     padding: 10px;
@@ -40,4 +40,34 @@ h2 {
     border: none;
     color: #fff;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.boxOshowOffer {
+    width: 100%;
+    background-color: #ffff;
+    color: #000;
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+#ClearBtn {
+    margin-top: 2rem;
+    background-color: rgb(208, 141, 17);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boxOshowOffer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    font-size: 1.9rem;
+    color: #ccc;
 }
