@@ -6,12 +6,12 @@ body {
 .container {
     width: 500px;
     height: 550px;
-    background-color: black;
+    background-color: #000;
     margin: 10rem auto;
     padding: 10px;
     box-shadow: 10px 10px 5px #aeadad;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
 }
 
 h2 {
@@ -87,10 +87,16 @@ h2 {
 
 .task span {
     flex: 1;
+    font-size: 1.3rem;
 }
 
 a {
     text-decoration: none;
     margin-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+
+
+#Delete {
+    color: #fff
 }
